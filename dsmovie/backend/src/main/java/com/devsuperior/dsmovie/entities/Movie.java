@@ -1,10 +1,15 @@
 package com.devsuperior.dsmovie.entities;
 
+import java.util.HashSet;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
+
+import org.hibernate.mapping.Set;
 
 @Entity
 @Table (name = "tb_movie")
@@ -19,7 +24,7 @@ public class Movie {
 	private Integer count; 
 	private String image;
 	
-	
+
 	public Movie() {
 		
 		
